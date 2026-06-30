@@ -68,7 +68,7 @@ export default function App() {
           <button className={`btn btn-sm ${activeTab === 'shop' ? 'text-warning fw-bold' : 'text-light'}`} onClick={() => setActiveTab("shop")}>Shop</button>
           <button className={`btn btn-sm ${activeTab === 'about' ? 'text-warning fw-bold' : 'text-light'}`} onClick={() => setActiveTab("about")}>About</button>
           <button className="btn btn-outline-light btn-sm position-relative ms-2" onClick={() => setShowCheckout(true)}>
-            Cart {cartCount > 0 && <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">{cartCount}</span>}
+            🛒 Cart {cartCount > 0 && <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">{cartCount}</span>}
           </button>
         </div>
       </nav>
