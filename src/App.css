@@ -1,0 +1,85 @@
+/*  FONTS & CORE TOKENS  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+:root {
+  --ink: #1A1A1A;
+  --bg: #F8F9FA;
+  --gold: #C5A028;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: #333333;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/*  SYSTEM IMAGE: PROGRESS BAR STEPS  */
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E0E0E0;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.step-circle.active, .step-circle.done {
+  background-color: var(--gold);
+  color: #000;
+}
+
+/*  FACETED SEARCH SIDEBAR  */
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+/*  CARDS & INTERACTION  */
+.watch-card {
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  background: #FFF;
+}
+.watch-img-container {
+  background-color: #F0EDE8;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.watch-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  CUSTOM BUTTONS  */
+.btn-gold {
+  background-color: var(--gold);
+  color: #FFF;
+  font-weight: 600;
+  border: none;
+}
+.btn-gold:hover {
+  background-color: #B49020;
+  color: #FFF;
+}
+
+/* MODAL BACKGROUND OVERLAY */
+.custom-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
